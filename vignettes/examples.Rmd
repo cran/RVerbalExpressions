@@ -1,0 +1,91 @@
+---
+title: "Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(RVerbalExpressions)
+```
+
+The goal of this vignette is to provide some basic examples that solve common regular expression tasks. The `print` and `grepl` calls are attached at the end of each chain to show the regular expression that is constructed and what it matches.
+
+## Contains two words
+
+```{r}
+# find something that must contain two words
+rx() %>% 
+  rx_find("cat") %>% 
+  rx_anything() %>% 
+  rx_find("dog") %>% 
+  print() %>% 
+  grepl(c("cat dog", "cat", "dog"))
+```
+
+## Between two words
+
+```{r}
+# find something between two words
+rx() %>% 
+  rx_seek_prefix("cat") %>% 
+  rx_something() %>% 
+  rx_seek_suffix("dog") %>% 
+  print() %>% 
+  grepl(c("cat something dog", "catdog"), perl = TRUE)
+```
+
+## Starts with word
+
+```{r}
+# find something that starts with word
+rx() %>% 
+  rx_start_of_line() %>% 
+  rx_find("cat") %>% 
+  print() %>% 
+  grepl(c("cat", "cat dog", "dog cat"))
+```
+
+## Ends with word
+
+```{r}
+# find something that ends with word
+rx() %>% 
+  rx_find("cat") %>% 
+  rx_end_of_line() %>% 
+  print() %>% 
+  grepl(c("cat", "cat dog", "dog cat"))
+```
+
+## Starts and end with words
+
+```{r}
+# find something that starts with and ends with words
+rx() %>% 
+  rx_start_of_line() %>% 
+  rx_find("cat") %>% 
+  rx_anything() %>% 
+  rx_find("dog") %>% 
+  rx_end_of_line() %>% 
+  print() %>% 
+  grepl(c("cat", "cat dog", "dog cat"))
+```
+
+## Case insensitive
+
+```{r}
+# find something regardless of case
+rx() %>% 
+  rx_find("cat") %>% 
+  rx_with_any_case() %>% 
+  print() %>% 
+  grepl(c("cat", "CAT"))
+```
+
