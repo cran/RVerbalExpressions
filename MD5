@@ -1,7 +1,7 @@
-fe6b7373238f7e58a4905fb2d953b8dc *DESCRIPTION
+e8074d51139dd724fdeebc0084eb6393 *DESCRIPTION
 7aedaa4346c8feb06ecf52af74811013 *LICENSE
 0d1daa27ba651ed7c8f19701b5637dd6 *NAMESPACE
-c844d8e1cff915828aad7f8ba4e6c3c3 *NEWS.md
+efd0abef3993812f6d9720e03c063ef9 *NEWS.md
 73e6f0dd3b4cfde467791a1e850dc2a1 *R/capture_groups.R
 998d401b875202676d9dcf52ca99ecde *R/constructor.R
 a09829348e25998afec7dd592f400d0a *R/lookarounds.R
@@ -10,11 +10,11 @@ bc8f7462ee46987373ced2fa0a2d50c3 *R/loops.R
 37d7011064920a7a36e1e9d69e334e74 *R/rules.R
 2e7d7387c60583502bf261c510bd9464 *R/special_characters.R
 d6733ef1a72f7286bc8f2e459e87010c *R/utils.R
-1d9983afc3c0632d88a982c161a20880 *README.md
-a816fd8152c575a368c27b6f9bff835d *build/vignette.rds
-3e9a4d8bc495c8a8c3ba6614ed6881e0 *inst/doc/examples.R
+cf81d8b2f1710fc5ef524419a06aaf4b *README.md
+c8e2aa386648a9a3fd4678d1088f95e1 *build/vignette.rds
+d177da77630fbc97a7c7042220cdfe2b *inst/doc/examples.R
 5ec760d8a2206198e8835fcb7ce02ef9 *inst/doc/examples.Rmd
-d062e010e51baf89441148285c0ec30a *inst/doc/examples.html
+8f34a24103bb49366ac42f0ff5544fe7 *inst/doc/examples.html
 8789195c3b4687a62a46db55b4b05620 *man/figures/logo.png
 41f6af0e961bebe03089ee84018f3394 *man/pipe.Rd
 39e77d7f12f8c8d8d50d589cdc38ca93 *man/rx.Rd
@@ -30,7 +30,7 @@ f5dda77bb2af768dbe4d73eaa3a98fb2 *man/rx_either_of.Rd
 18a05091fb4fcf686dbc5f5d4cbbc340 *man/rx_end_capture.Rd
 2a435bc5055ceb87d427d0e41d404a4e *man/rx_end_of_line.Rd
 85adaa88dfee6493606365ce0cbf53bd *man/rx_find.Rd
-649752d4e72db1aa20c1da7abcfb6063 *man/rx_line_break.Rd
+db7c7932add0dc3d4ea66de7fc1c5c88 *man/rx_line_break.Rd
 e8fdaed4fbea03c6f3e4822a9a9fee93 *man/rx_lowercase.Rd
 2a2c5d809054dd77e5649af345764618 *man/rx_maybe.Rd
 797135d45876c4204a7ffcf015b9c479 *man/rx_multiple.Rd
@@ -42,9 +42,9 @@ fcca731cdb1e1ca65f30e09f1953b340 *man/rx_one_or_more.Rd
 332b6918223addfe8a145ce346088d30 *man/rx_seek.Rd
 68e2b94b85e27e68f3631b1cebe06bd4 *man/rx_something.Rd
 bd5f8806e9ce74c4a7091121ade2bdf4 *man/rx_something_but.Rd
-e392038a5758b7222d7dea5fb0f326ca *man/rx_space.Rd
+9545cefdc42890d13668b68e80a2ba53 *man/rx_space.Rd
 0b353589de6b48cda3b895dbe2594ccc *man/rx_start_of_line.Rd
-fc4b4c921df885a5d41656c6a243d7bf *man/rx_tab.Rd
+ce128926b12fbe68578ce92fa0f2de07 *man/rx_tab.Rd
 a04a07db04f4bc8c7f003a2b2c421bb9 *man/rx_uppercase.Rd
 664069b063bf6c4a81448178cd9b5094 *man/rx_whitespace.Rd
 32d3a1870e8ff0a37b2903228a8f1707 *man/rx_with_any_case.Rd
@@ -58,7 +58,7 @@ b10d4ffbf0549f5d4579b7ee3c8cc2bf *tests/testthat/test-alnum.R
 0bd45e114794a0c204e599fe89b051c0 *tests/testthat/test-any_of.R
 e6c6d760779b0cdc41077469056260c5 *tests/testthat/test-anything.R
 e555dd3d2febce0d0c078a4c72d9f6cb *tests/testthat/test-anything_but.R
-055019e8bac06298fc362063a94021b4 *tests/testthat/test-avoid.R
+86015c0268fad8371213b99237817d9d *tests/testthat/test-avoid.R
 dff7d28fa8125d7b50219049f49aabd8 *tests/testthat/test-capture_groups.R
 54e4221e616bddff2994aad8ee1dd1a6 *tests/testthat/test-digit.R
 c260f21f042b1f68443a697c836a0cab *tests/testthat/test-either_of.R
